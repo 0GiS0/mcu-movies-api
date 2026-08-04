@@ -15,11 +15,11 @@ updates:
       timezone: "Europe/Madrid"
     open-pull-requests-limit: 10
     labels:
-      - "dependencies"
-      - "nuget"
+      - "📦 dependencies"
+      - "🔷 nuget"
     commit-message:
-      prefix: "chore(deps)"
-      prefix-development: "chore(deps-dev)"
+      prefix: "📦 chore(deps)"
+      prefix-development: "🛠️ chore(deps-dev)"
       include: "scope"
     groups:
       microsoft-aspnetcore:
@@ -46,10 +46,10 @@ updates:
       timezone: "Europe/Madrid"
     open-pull-requests-limit: 5
     labels:
-      - "dependencies"
-      - "github-actions"
+      - "📦 dependencies"
+      - "🤖 github-actions"
     commit-message:
-      prefix: "ci(deps)"
+      prefix: "🤖 ci(deps)"
       include: "scope"
     groups:
       github-actions:
@@ -66,10 +66,10 @@ updates:
       timezone: "Europe/Madrid"
     open-pull-requests-limit: 5
     labels:
-      - "dependencies"
-      - "devcontainer"
+      - "📦 dependencies"
+      - "🐳 devcontainer"
     commit-message:
-      prefix: "chore(devcontainer)"
+      prefix: "🐳 chore(devcontainer)"
       include: "scope"
     groups:
       devcontainers:
