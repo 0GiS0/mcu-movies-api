@@ -1,0 +1,7 @@
+{
+	"name": "🎬 MCU Movies API",
+	"image": "mcr.microsoft.com/devcontainers/dotnet:2-10.0-noble",
+	"features": {
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	}
+}
