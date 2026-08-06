@@ -10,7 +10,8 @@ Content-Type: application/json
 
 {
   "title": "Guardians of the Galaxy",
-  "releaseYear": 2014
+  "releaseYear": 2014,
+  "duration": 121
 }
 
 ### Comprobar que se ha añadido
