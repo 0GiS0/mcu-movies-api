@@ -32,6 +32,9 @@ var movies = new List<Movie>
 app.MapGet("/movies", () => Results.Ok(movies))
     .WithName("GetMovies");
 
+app.MapGet("/movies/favorites", () => Results.Ok(movies.Where(movie => movie.IsFavorite)))
+    .WithName("GetFavoriteMovies");
+
 app.MapPost("/movies", (CreateMovieRequest request) =>
 {
     var nextId = movies.Count == 0 ? 1 : movies.Max(movie => movie.Id) + 1;
