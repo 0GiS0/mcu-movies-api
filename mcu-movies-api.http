@@ -17,3 +17,23 @@ Content-Type: application/json
 ### Comprobar que se ha añadido
 GET {{MoviesApi_HostAddress}}/movies
 Accept: application/json
+
+### Marcar una película como favorita
+PATCH {{MoviesApi_HostAddress}}/movies/1/favorite
+Content-Type: application/json
+
+{
+  "isFavorite": true
+}
+
+### Desmarcar una película como favorita
+PATCH {{MoviesApi_HostAddress}}/movies/1/favorite
+Content-Type: application/json
+
+{
+  "isFavorite": false
+}
+
+### Obtener las películas favoritas
+GET {{MoviesApi_HostAddress}}/movies/favorites
+Accept: application/json
