@@ -43,4 +43,20 @@ app.MapPost("/movies", (CreateMovieRequest request) =>
 })
 .WithName("CreateMovie");
 
+app.MapPatch("/movies/{id:int}/favorite", (int id, SetFavoriteRequest request) =>
+{
+    var index = movies.FindIndex(movie => movie.Id == id);
+
+    if (index == -1)
+    {
+        return Results.NotFound();
+    }
+
+    var updated = movies[index] with { IsFavorite = request.IsFavorite };
+    movies[index] = updated;
+
+    return Results.Ok(updated);
+})
+.WithName("SetMovieFavorite");
+
 app.Run();
